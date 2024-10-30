@@ -6,7 +6,6 @@
       {
         "id": "603e15adca2722cb",
         "type": "tabs",
-        "dimension": 46.698679471788715,
         "children": [
           {
             "id": "2a59dc90838a23ce",
@@ -14,20 +13,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/함수 콜 스택 chan.md"
-              }
-            }
-          },
-          {
-            "id": "83ecf9bce79b03a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "박찬서/read().md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "Excalidraw/함수 콜 스택update.md"
               }
             }
           },
@@ -37,28 +23,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "김기수/산협 프로젝트 2/백서 제작용/about Wait queue....md",
+                "file": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_v4_rcv().md",
                 "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "ecc92da43fce1eb5",
-        "type": "tabs",
-        "dimension": 53.301320528211285,
-        "children": [
-          {
-            "id": "4bf22d975b53c183",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "김기수/산협 프로젝트 2/미팅 노트/10.18 미팅.md",
-                "mode": "source",
+                "backlinks": true,
                 "source": false
               }
             }
@@ -92,7 +59,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "fill_cb",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,11 +84,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c6aa2f254e138378",
@@ -217,59 +186,6 @@
     "type": "floating",
     "children": [
       {
-        "id": "af853bcea2ac2380",
-        "type": "window",
-        "children": [
-          {
-            "id": "234001cdcd4cdb10",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ce21640a17253bfa",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_recvmsg_locked().md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "cb1620ad0d45e64b",
-                "type": "leaf",
-                "state": {
-                  "type": "excalidraw",
-                  "state": {
-                    "file": "Excalidraw/주요 개념 구조도.md"
-                  }
-                }
-              },
-              {
-                "id": "285eb457c1c29acb",
-                "type": "leaf",
-                "state": {
-                  "type": "excalidraw",
-                  "state": {
-                    "file": "Excalidraw/함수 콜 스택update.md"
-                  }
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "vertical",
-        "x": 408,
-        "y": 39,
-        "width": 1302,
-        "height": 1068,
-        "maximize": false,
-        "zoom": 0
-      },
-      {
         "id": "d1baf167ea1f89cd",
         "type": "window",
         "children": [
@@ -281,9 +197,11 @@
                 "id": "f86dddeaca20d0dd",
                 "type": "leaf",
                 "state": {
-                  "type": "excalidraw",
+                  "type": "markdown",
                   "state": {
-                    "file": "Excalidraw/RPS-IPI 관계도.md"
+                    "file": "Encyclopedia of NetworkSystem/Function/net-core/__release_sock().md",
+                    "mode": "source",
+                    "source": false
                   }
                 }
               },
@@ -309,48 +227,50 @@
                   }
                 }
               }
-            ]
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical",
-        "x": 959,
-        "y": 39,
-        "width": 751,
-        "height": 1068,
+        "x": 105,
+        "y": 188,
+        "width": 1710,
+        "height": 1055,
         "maximize": false,
         "zoom": 0
       }
     ]
   },
-  "active": "cb1620ad0d45e64b",
+  "active": "4e68ec536e95d3f7",
   "lastOpenFiles": [
     "Excalidraw/함수 콜 스택update.md",
-    "Excalidraw/주요 개념 구조도.md",
-    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_recvmsg_locked().md",
-    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_recvmsg().md",
-    "황재훈/Research Intern/082924/tcp_rcv_established().md",
-    "황재훈/Research Intern/082924/tcp_v4_do_rcv().md",
-    "황재훈/Research Intern/082924/tcp_v4_rcv().md",
-    "Excalidraw/함수 콜 스택 chan.md",
-    "Excalidraw/RPS-IPI 관계도.md",
-    "김기수/산협 프로젝트 2/미팅 노트/10.18 미팅.md",
-    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_add_backlog().md",
-    "김기수/산협 프로젝트 2/백서 제작용/about Wait queue....md",
-    "Encyclopedia of NetworkSystem/Function/net-ipv4/sk_add_backlog().md",
     "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_v4_rcv().md",
-    "박찬서/read().md",
+    "Excalidraw/주요 개념 구조도.md",
+    "Encyclopedia of NetworkSystem/Function/net-core/__napi_build_skb().md",
+    "Encyclopedia of NetworkSystem/Function/net-core/napi_build_skb().md",
+    "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_build_skb().md",
+    "Encyclopedia of NetworkSystem/Function/include-linux/__skb_put().md",
+    "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_clean_rx_irq().md",
+    "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_get_rx_buf().md",
+    "Encyclopedia of NetworkSystem/Function/include-net/xdp_prepare_buff().md",
+    "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_construct_skb().md",
+    "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_process_skb_fields().md",
+    "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_ring_uses_build_skb().md",
+    "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_receive_skb().md",
+    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_queue_rcv().md",
     "Encyclopedia of NetworkSystem/Function/net-core/__release_sock().md",
-    "Encyclopedia of NetworkSystem/Function/net-core/release_sock().md",
+    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_rcv_established().md",
+    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_v4_do_rcv().md",
+    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_recvmsg().md",
+    "김기수/산협 프로젝트 2/미팅 노트/10.18 미팅.md",
+    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_recvmsg_locked().md",
+    "Encyclopedia of NetworkSystem/Function/net-ipv4/__tcp_ack_snd_check().md",
+    "Excalidraw/주요 개념 구조도update.md",
+    "Encyclopedia of NetworkSystem/Struct/include-net/sock.md",
+    "Encyclopedia of NetworkSystem/Function/net-ipv4/sk_add_backlog().md",
+    "Excalidraw/sock.md",
     "Pasted Image 20241015154739_315.png",
-    "김기수/산협 프로젝트 2/백서 제작용/recv() syscall.md",
-    "sock_recvmsg.md",
-    "Encyclopedia of NetworkSystem/Function/include-linux/skb_copy_datagram_msg().md",
-    "Encyclopedia of NetworkSystem/Function/net-core/skb_copy_datagram_iter().md",
-    "Encyclopedia of NetworkSystem/Function/net-core/__skb_datagram_iter().md",
-    "유지훈/미팅/240920.md",
-    "박찬서/10.11 미팅.md",
-    "박찬서/epoll_create().md",
-    "Encyclopedia of NetworkSystem/Function/net-ipv4/skb_try_coalesce().md",
+    "lockdep.pdf",
     "Excalidraw/함수 콜 스택.png"
   ]
 }

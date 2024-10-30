@@ -9,60 +9,156 @@
       "path": "Excalidraw/함수 콜 스택update.md"
     },
     {
-      "basename": "tcp_recvmsg_locked()",
-      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_recvmsg_locked().md"
+      "basename": "tcp_v4_rcv()",
+      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_v4_rcv().md"
+    },
+    {
+      "basename": "__napi_build_skb()",
+      "path": "Encyclopedia of NetworkSystem/Function/net-core/__napi_build_skb().md"
+    },
+    {
+      "basename": "napi_build_skb()",
+      "path": "Encyclopedia of NetworkSystem/Function/net-core/napi_build_skb().md"
+    },
+    {
+      "basename": "ice_build_skb()",
+      "path": "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_build_skb().md"
+    },
+    {
+      "basename": "__skb_put()",
+      "path": "Encyclopedia of NetworkSystem/Function/include-linux/__skb_put().md"
+    },
+    {
+      "basename": "ice_clean_rx_irq()",
+      "path": "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_clean_rx_irq().md"
+    },
+    {
+      "basename": "ice_get_rx_buf()",
+      "path": "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_get_rx_buf().md"
+    },
+    {
+      "basename": "xdp_prepare_buff()",
+      "path": "Encyclopedia of NetworkSystem/Function/include-net/xdp_prepare_buff().md"
+    },
+    {
+      "basename": "ice_construct_skb()",
+      "path": "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_construct_skb().md"
+    },
+    {
+      "basename": "ice_process_skb_fields()",
+      "path": "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_process_skb_fields().md"
+    },
+    {
+      "basename": "ice_ring_uses_build_skb()",
+      "path": "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_ring_uses_build_skb().md"
+    },
+    {
+      "basename": "ice_receive_skb()",
+      "path": "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_receive_skb().md"
+    },
+    {
+      "basename": "tcp_queue_rcv()",
+      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_queue_rcv().md"
+    },
+    {
+      "basename": "__release_sock()",
+      "path": "Encyclopedia of NetworkSystem/Function/net-core/__release_sock().md"
+    },
+    {
+      "basename": "tcp_rcv_established()",
+      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_rcv_established().md"
+    },
+    {
+      "basename": "tcp_v4_do_rcv()",
+      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_v4_do_rcv().md"
     },
     {
       "basename": "tcp_recvmsg()",
       "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_recvmsg().md"
     },
     {
-      "basename": "tcp_rcv_established()",
-      "path": "황재훈/Research Intern/082924/tcp_rcv_established().md"
-    },
-    {
-      "basename": "tcp_v4_do_rcv()",
-      "path": "황재훈/Research Intern/082924/tcp_v4_do_rcv().md"
-    },
-    {
-      "basename": "tcp_v4_rcv()",
-      "path": "황재훈/Research Intern/082924/tcp_v4_rcv().md"
-    },
-    {
-      "basename": "함수 콜 스택 chan",
-      "path": "Excalidraw/함수 콜 스택 chan.md"
-    },
-    {
-      "basename": "RPS-IPI 관계도",
-      "path": "Excalidraw/RPS-IPI 관계도.md"
-    },
-    {
       "basename": "10.18 미팅",
       "path": "김기수/산협 프로젝트 2/미팅 노트/10.18 미팅.md"
     },
     {
-      "basename": "tcp_add_backlog()",
-      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_add_backlog().md"
+      "basename": "tcp_recvmsg_locked()",
+      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_recvmsg_locked().md"
     },
     {
-      "basename": "about Wait queue...",
-      "path": "김기수/산협 프로젝트 2/백서 제작용/about Wait queue....md"
+      "basename": "__tcp_ack_snd_check()",
+      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/__tcp_ack_snd_check().md"
+    },
+    {
+      "basename": "주요 개념 구조도update",
+      "path": "Excalidraw/주요 개념 구조도update.md"
+    },
+    {
+      "basename": "sock",
+      "path": "Encyclopedia of NetworkSystem/Struct/include-net/sock.md"
     },
     {
       "basename": "sk_add_backlog()",
       "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/sk_add_backlog().md"
     },
     {
-      "basename": "tcp_v4_rcv()",
-      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_v4_rcv().md"
+      "basename": "sock",
+      "path": "Excalidraw/sock.md"
+    },
+    {
+      "basename": "tcp_queue_rcv",
+      "path": "황재훈/Research Intern/082924/tcp_queue_rcv.md"
+    },
+    {
+      "basename": "RPS-IPI 관계도",
+      "path": "Excalidraw/RPS-IPI 관계도.md"
+    },
+    {
+      "basename": "tcp_send_ack()",
+      "path": "tcp_send_ack().md"
+    },
+    {
+      "basename": "__tcp_send_ack()",
+      "path": "__tcp_send_ack().md"
+    },
+    {
+      "basename": "tcp_rcv_established()",
+      "path": "황재훈/Research Intern/082924/tcp_rcv_established().md"
+    },
+    {
+      "basename": "Pasted Image 20241015154739_315",
+      "path": "Pasted Image 20241015154739_315.png"
+    },
+    {
+      "basename": "함수 콜 스택 chan",
+      "path": "Excalidraw/함수 콜 스택 chan.md"
     },
     {
       "basename": "read()",
       "path": "박찬서/read().md"
     },
     {
-      "basename": "__release_sock()",
-      "path": "Encyclopedia of NetworkSystem/Function/net-core/__release_sock().md"
+      "basename": "about Wait queue...",
+      "path": "김기수/산협 프로젝트 2/백서 제작용/about Wait queue....md"
+    },
+    {
+      "basename": "lockdep",
+      "path": "lockdep.pdf"
+    },
+    {
+      "basename": "NF_HOOK",
+      "path": "NF_HOOK.md"
+    },
+    {
+      "basename": "tcp_v4_rcv()",
+      "path": "황재훈/Research Intern/082924/tcp_v4_rcv().md"
+    },
+    {
+      "basename": "tcp_v4_do_rcv()",
+      "path": "황재훈/Research Intern/082924/tcp_v4_do_rcv().md"
+    },
+    {
+      "basename": "tcp_add_backlog()",
+      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_add_backlog().md"
     },
     {
       "basename": "release_sock()",
@@ -103,58 +199,6 @@
     {
       "basename": "skb_try_coalesce()",
       "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/skb_try_coalesce().md"
-    },
-    {
-      "basename": "select()",
-      "path": "박찬서/select().md"
-    },
-    {
-      "basename": "ep_poll_callback()",
-      "path": "박찬서/ep_poll_callback().md"
-    },
-    {
-      "basename": "epoll_wait()",
-      "path": "박찬서/epoll_wait().md"
-    },
-    {
-      "basename": "epoll_ctl()",
-      "path": "박찬서/epoll_ctl().md"
-    },
-    {
-      "basename": "perf",
-      "path": "김기수/산협 프로젝트 2/스터디 자료/perf.md"
-    },
-    {
-      "basename": "산협 프로젝트 2",
-      "path": "김기수/산협 프로젝트 2/산협 프로젝트 2.md"
-    },
-    {
-      "basename": "syscall_64.tbl",
-      "path": "박찬서/syscall_64.tbl.md"
-    },
-    {
-      "basename": "tcp_try_coalesce()",
-      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_try_coalesce().md"
-    },
-    {
-      "basename": "tcp_queue_rcv()",
-      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_queue_rcv().md"
-    },
-    {
-      "basename": "tcp_rcv_established()",
-      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_rcv_established().md"
-    },
-    {
-      "basename": "ice_update_rx_ring_stats()",
-      "path": "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_update_rx_ring_stats().md"
-    },
-    {
-      "basename": "함수 콜 스택",
-      "path": "Excalidraw/함수 콜 스택.png"
-    },
-    {
-      "basename": "함수 콜 스택",
-      "path": "Excalidraw/함수 콜 스택.md"
     }
   ],
   "omittedPaths": []
