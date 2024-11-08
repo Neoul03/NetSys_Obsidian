@@ -8,16 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2a59dc90838a23ce",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/함수 콜 스택update.md"
-              }
-            }
-          },
-          {
             "id": "0700b88ebd425eff",
             "type": "leaf",
             "state": {
@@ -29,8 +19,43 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8fcd237a4b5097fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "김기수/산협 프로젝트 2/논문 리뷰/NetChannel 코드리뷰.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ea028361dfb5ea8d",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "김기수/산협 프로젝트 2/논문 리뷰/NetChannel struct.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "faf0a33d05d02d16",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "김기수/산협 프로젝트 2/세미나 노트/11.8 세미나.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -59,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fill_cb",
+                "query": "net_protocol",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,12 +109,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 347.5,
     "collapsed": true
   },
   "right": {
@@ -106,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/주요 개념 구조도.md",
+                "file": "김기수/산협 프로젝트 2/논문 리뷰/NetChannel 코드리뷰.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/주요 개념 구조도.md",
+                "file": "김기수/산협 프로젝트 2/논문 리뷰/NetChannel 코드리뷰.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/주요 개념 구조도.md"
+                "file": "김기수/산협 프로젝트 2/논문 리뷰/NetChannel 코드리뷰.md"
               }
             }
           },
@@ -177,8 +201,7 @@
       "command-palette:명령어 팔레트 열기": false,
       "random-note:랜덤 노트 열기": false,
       "workspaces:작업 공간 레이아웃 관리": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "floating": {
@@ -211,7 +234,7 @@
                 "state": {
                   "type": "excalidraw",
                   "state": {
-                    "file": "Excalidraw/주요 개념 구조도.md"
+                    "file": "Excalidraw/주요 개념 구조도update.md"
                   }
                 }
               },
@@ -219,57 +242,75 @@
                 "id": "676cd1a2a936af7c",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
+                  "type": "excalidraw",
                   "state": {
-                    "file": "김기수/산협 프로젝트 2/미팅 노트/10.18 미팅.md",
-                    "mode": "source",
-                    "source": false
+                    "file": "Excalidraw/함수 콜 스택update.md"
                   }
+                }
+              },
+              {
+                "id": "c197be27d303d23a",
+                "type": "leaf",
+                "state": {
+                  "type": "excalidraw",
+                  "state": {
+                    "file": "Excalidraw/RPS-IPI 관계도.md"
+                  }
+                }
+              },
+              {
+                "id": "a434cb88f8a5e255",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {}
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 3
           }
         ],
         "direction": "vertical",
-        "x": 105,
-        "y": 188,
-        "width": 1710,
-        "height": 1055,
+        "x": 726,
+        "y": 43,
+        "width": 1194,
+        "height": 1200,
         "maximize": false,
         "zoom": 0
       }
     ]
   },
-  "active": "4e68ec536e95d3f7",
+  "active": "8fcd237a4b5097fa",
   "lastOpenFiles": [
-    "Excalidraw/함수 콜 스택update.md",
-    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_v4_rcv().md",
-    "Excalidraw/주요 개념 구조도.md",
-    "Encyclopedia of NetworkSystem/Function/net-core/__napi_build_skb().md",
-    "Encyclopedia of NetworkSystem/Function/net-core/napi_build_skb().md",
-    "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_build_skb().md",
-    "Encyclopedia of NetworkSystem/Function/include-linux/__skb_put().md",
-    "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_clean_rx_irq().md",
-    "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_get_rx_buf().md",
-    "Encyclopedia of NetworkSystem/Function/include-net/xdp_prepare_buff().md",
-    "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_construct_skb().md",
-    "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_process_skb_fields().md",
-    "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_ring_uses_build_skb().md",
-    "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_receive_skb().md",
-    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_queue_rcv().md",
-    "Encyclopedia of NetworkSystem/Function/net-core/__release_sock().md",
-    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_rcv_established().md",
-    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_v4_do_rcv().md",
-    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_recvmsg().md",
-    "김기수/산협 프로젝트 2/미팅 노트/10.18 미팅.md",
-    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_recvmsg_locked().md",
-    "Encyclopedia of NetworkSystem/Function/net-ipv4/__tcp_ack_snd_check().md",
-    "Excalidraw/주요 개념 구조도update.md",
-    "Encyclopedia of NetworkSystem/Struct/include-net/sock.md",
-    "Encyclopedia of NetworkSystem/Function/net-ipv4/sk_add_backlog().md",
-    "Excalidraw/sock.md",
+    "무제 파일.md",
+    "김기수/산협 프로젝트 2/논문 리뷰/NetChannel struct.excalidraw.md",
+    "김기수/산협 프로젝트 2/세미나 노트/11.8 세미나.md",
+    "Untitled.md",
+    "김기수/산협 프로젝트 2/백서 제작용/pfmemalloc이란.md",
+    "Excalidraw/RPS-IPI 관계도.md",
+    "김기수/산협 프로젝트 2/백서 제작용/raw_local_deliver().md",
+    "김기수/산협 프로젝트 2/백서 제작용/recv() syscall.md",
+    "김기수/산협 프로젝트 2/백서 제작용/hooks_ipv4란.md",
+    "김기수/산협 프로젝트 2/백서 제작용/get_rps_cpu() 함수에 대한 로직 분석과 고찰 및 의의.md",
+    "김기수/산협 프로젝트 2/백서 제작용/BPF Flow Dissector에 대하여.md",
+    "김기수/산협 프로젝트 2/백서 제작용/`__inet_lookup_skb().md",
+    "김기수/산협 프로젝트 2/백서 제작용/`__netif_receive_skb_core() 함수에 대한 로직 분석과 고찰 및 의의.md",
+    "김기수/산협 프로젝트 2/백서 제작용/`__netif_receive_skb_list_ptype().md",
+    "김기수/산협 프로젝트 2/백서 제작용/백서 제작용.md",
+    "김기수/산협 프로젝트 2/백서 제작용/about Wait queue....md",
+    "김기수/산협 프로젝트 2/백서 제작용/Untitled.md",
+    "김기수/산협 프로젝트 2/백서 제작용/tcp_child_process().md",
+    "김기수/산협 프로젝트 2/백서 제작용/sock_rps_save_rxhash().md",
+    "testagain.txt.md",
+    "tcp_send_ack().md",
+    "sock_recvmsg.md",
+    "sock_def_readable().md",
+    "README.md",
+    "Pasted image 20241101101625.png",
     "Pasted Image 20241015154739_315.png",
+    "Pasted image 20240920053724.png",
+    "김기수/산협 프로젝트 2/논문 리뷰/NetChannel 코드리뷰.md",
+    "Excalidraw/함수 콜 스택update.md",
     "lockdep.pdf",
     "Excalidraw/함수 콜 스택.png"
   ]
