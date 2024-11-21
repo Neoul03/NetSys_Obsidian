@@ -6,6 +6,8 @@ cubic (1 connection) mtu 1500
 cubic (10 connection) mtu 1500
 ![[Pasted image 20241106212648.png]]
 ![[Pasted image 20241107202509.png]]
+![[Pasted image 20241112185219.png]]
+pkt loss 가 없어서 cwnd 가 지속적으로 늘어난다. 
 
 cubic (30 connection) mtu 1500
 ![[Pasted image 20241106212221.png]]
