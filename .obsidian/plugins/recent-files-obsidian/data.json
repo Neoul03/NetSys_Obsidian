@@ -1,20 +1,152 @@
 {
   "recentFiles": [
     {
-      "basename": "NetChannel 코드리뷰",
-      "path": "김기수/산협 프로젝트 2/논문 리뷰/NetChannel 코드리뷰.md"
+      "basename": "넷채널",
+      "path": "김기수/산협 프로젝트 2/논문 리뷰/넷채널.md"
     },
     {
-      "basename": "무제 파일",
-      "path": "무제 파일.md"
+      "basename": "논문 리뷰",
+      "path": "김기수/산협 프로젝트 2/논문 리뷰/논문 리뷰.md"
+    },
+    {
+      "basename": "NetChannel 코드리뷰",
+      "path": "김기수/산협 프로젝트 2/논문 리뷰/NetChannel 코드리뷰.md"
     },
     {
       "basename": "NetChannel struct.excalidraw",
       "path": "김기수/산협 프로젝트 2/논문 리뷰/NetChannel struct.excalidraw.md"
     },
     {
+      "basename": "RPS-IPI 관계도",
+      "path": "Excalidraw/RPS-IPI 관계도.md"
+    },
+    {
       "basename": "11.8 세미나",
       "path": "김기수/산협 프로젝트 2/세미나 노트/11.8 세미나.md"
+    },
+    {
+      "basename": "11.22 제안서 미팅",
+      "path": "김기수/산협 프로젝트 2/세미나 노트/11.22 제안서 미팅.md"
+    },
+    {
+      "basename": "11.1 미팅",
+      "path": "김기수/산협 프로젝트 2/미팅 노트/11.1 미팅.md"
+    },
+    {
+      "basename": "10.18 미팅",
+      "path": "김기수/산협 프로젝트 2/미팅 노트/10.18 미팅.md"
+    },
+    {
+      "basename": "함수 콜 스택update",
+      "path": "Excalidraw/함수 콜 스택update.md"
+    },
+    {
+      "basename": "함수 콜 스택 chan",
+      "path": "Excalidraw/함수 콜 스택 chan.md"
+    },
+    {
+      "basename": "Understanding Host Network Stack Overheads",
+      "path": "김기수/산협 프로젝트 2/논문 리뷰/Understanding Host Network Stack Overheads/Understanding Host Network Stack Overheads.md"
+    },
+    {
+      "basename": "주요 개념 구조도update",
+      "path": "Excalidraw/주요 개념 구조도update.md"
+    },
+    {
+      "basename": "9.27 미팅",
+      "path": "김기수/산협 프로젝트 2/미팅 노트/9.27 미팅.md"
+    },
+    {
+      "basename": "9.20 미팅",
+      "path": "김기수/산협 프로젝트 2/미팅 노트/9.20 미팅.md"
+    },
+    {
+      "basename": "9.11 미팅",
+      "path": "김기수/산협 프로젝트 2/미팅 노트/9.11 미팅.md"
+    },
+    {
+      "basename": "tcp_v4_rcv()",
+      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_v4_rcv().md"
+    },
+    {
+      "basename": "8.6 미팅",
+      "path": "김기수/산협 프로젝트 2/미팅 노트/8.6 미팅.md"
+    },
+    {
+      "basename": "8.13 미팅",
+      "path": "김기수/산협 프로젝트 2/미팅 노트/8.13 미팅.md"
+    },
+    {
+      "basename": "8.27 미팅",
+      "path": "김기수/산협 프로젝트 2/미팅 노트/8.27 미팅.md"
+    },
+    {
+      "basename": "7.30 미팅",
+      "path": "김기수/산협 프로젝트 2/미팅 노트/7.30 미팅.md"
+    },
+    {
+      "basename": "7.26 미팅",
+      "path": "김기수/산협 프로젝트 2/미팅 노트/7.26 미팅.md"
+    },
+    {
+      "basename": "7.19 미팅",
+      "path": "김기수/산협 프로젝트 2/미팅 노트/7.19 미팅/7.19 미팅.md"
+    },
+    {
+      "basename": "7.12 미팅",
+      "path": "김기수/산협 프로젝트 2/미팅 노트/7.12 미팅/7.12 미팅.md"
+    },
+    {
+      "basename": "7.5 미팅",
+      "path": "김기수/산협 프로젝트 2/미팅 노트/7.5 미팅/7.5 미팅.md"
+    },
+    {
+      "basename": "6.28 미팅",
+      "path": "김기수/산협 프로젝트 2/미팅 노트/6.28 미팅.md"
+    },
+    {
+      "basename": "함수 콜 스택",
+      "path": "Excalidraw/함수 콜 스택.md"
+    },
+    {
+      "basename": "sock",
+      "path": "Excalidraw/sock.md"
+    },
+    {
+      "basename": "RCU",
+      "path": "김기수/산협 프로젝트 2/리눅스 OS 기술/RCU.md"
+    },
+    {
+      "basename": "Towards μs Tail Latency and Terabit Ethernet Disaggregating the Host Network Stack",
+      "path": "김기수/산협 프로젝트 2/논문 리뷰/Towards μs Tail Latency and Terabit Ethernet Disaggregating the Host Network Stack.md"
+    },
+    {
+      "basename": "무제 파일",
+      "path": "무제 파일.md"
+    },
+    {
+      "basename": "주요 개념 구조도",
+      "path": "Excalidraw/주요 개념 구조도.md"
+    },
+    {
+      "basename": "NUMA",
+      "path": "김기수/산협 프로젝트 2/논문 리뷰/Understanding Host Network Stack Overheads/NUMA.md"
+    },
+    {
+      "basename": "RDMA - 원격 다이렉트 메모리 액세스",
+      "path": "김기수/산협 프로젝트 2/논문 리뷰/Understanding Host Network Stack Overheads/RDMA - 원격 다이렉트 메모리 액세스.md"
+    },
+    {
+      "basename": "Rx NAPI",
+      "path": "김기수/산협 프로젝트 2/논문 리뷰/Understanding Host Network Stack Overheads/Rx NAPI.md"
+    },
+    {
+      "basename": "Skb - 소켓 버퍼",
+      "path": "김기수/산협 프로젝트 2/논문 리뷰/Understanding Host Network Stack Overheads/Skb - 소켓 버퍼.md"
+    },
+    {
+      "basename": "함수 콜 스택",
+      "path": "Excalidraw/함수 콜 스택.png"
     },
     {
       "basename": "Untitled",
@@ -23,10 +155,6 @@
     {
       "basename": "pfmemalloc이란",
       "path": "김기수/산협 프로젝트 2/백서 제작용/pfmemalloc이란.md"
-    },
-    {
-      "basename": "RPS-IPI 관계도",
-      "path": "Excalidraw/RPS-IPI 관계도.md"
     },
     {
       "basename": "raw_local_deliver()",
@@ -71,134 +199,6 @@
     {
       "basename": "Untitled",
       "path": "김기수/산협 프로젝트 2/백서 제작용/Untitled.md"
-    },
-    {
-      "basename": "tcp_child_process()",
-      "path": "김기수/산협 프로젝트 2/백서 제작용/tcp_child_process().md"
-    },
-    {
-      "basename": "sock_rps_save_rxhash()",
-      "path": "김기수/산협 프로젝트 2/백서 제작용/sock_rps_save_rxhash().md"
-    },
-    {
-      "basename": "testagain.txt",
-      "path": "testagain.txt.md"
-    },
-    {
-      "basename": "tcp_send_ack()",
-      "path": "tcp_send_ack().md"
-    },
-    {
-      "basename": "sock_recvmsg",
-      "path": "sock_recvmsg.md"
-    },
-    {
-      "basename": "sock_def_readable()",
-      "path": "sock_def_readable().md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "Pasted image 20241101101625",
-      "path": "Pasted image 20241101101625.png"
-    },
-    {
-      "basename": "Pasted Image 20241015154739_315",
-      "path": "Pasted Image 20241015154739_315.png"
-    },
-    {
-      "basename": "Pasted image 20240920053724",
-      "path": "Pasted image 20240920053724.png"
-    },
-    {
-      "basename": "함수 콜 스택update",
-      "path": "Excalidraw/함수 콜 스택update.md"
-    },
-    {
-      "basename": "__release_sock()",
-      "path": "Encyclopedia of NetworkSystem/Function/net-core/__release_sock().md"
-    },
-    {
-      "basename": "주요 개념 구조도update",
-      "path": "Excalidraw/주요 개념 구조도update.md"
-    },
-    {
-      "basename": "주요 개념 구조도",
-      "path": "Excalidraw/주요 개념 구조도.md"
-    },
-    {
-      "basename": "Towards μs Tail Latency and Terabit Ethernet Disaggregating the Host Network Stack",
-      "path": "김기수/산협 프로젝트 2/논문 리뷰/Towards μs Tail Latency and Terabit Ethernet Disaggregating the Host Network Stack.md"
-    },
-    {
-      "basename": "tcp_v4_rcv()",
-      "path": "황재훈/Research Intern/082924/tcp_v4_rcv().md"
-    },
-    {
-      "basename": "tcp_v4_rcv()",
-      "path": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_v4_rcv().md"
-    },
-    {
-      "basename": "10.18 미팅",
-      "path": "김기수/산협 프로젝트 2/미팅 노트/10.18 미팅.md"
-    },
-    {
-      "basename": "ice_32b_rx_flex_desc",
-      "path": "Encyclopedia of NetworkSystem/Struct/drivers-net-ethernet-intel-ice/ice_32b_rx_flex_desc.md"
-    },
-    {
-      "basename": "sock",
-      "path": "Encyclopedia of NetworkSystem/Struct/include-net/sock.md"
-    },
-    {
-      "basename": "Iron- Isolating Network-based CPU in Container Environments",
-      "path": "김기수/산협 프로젝트 2/논문 리뷰/Iron- Isolating Network-based CPU in Container Environments/Iron- Isolating Network-based CPU in Container Environments.md"
-    },
-    {
-      "basename": "Skb - 소켓 버퍼",
-      "path": "김기수/산협 프로젝트 2/논문 리뷰/Understanding Host Network Stack Overheads/Skb - 소켓 버퍼.md"
-    },
-    {
-      "basename": "Understanding Host Network Stack Overheads",
-      "path": "김기수/산협 프로젝트 2/논문 리뷰/Understanding Host Network Stack Overheads/Understanding Host Network Stack Overheads.md"
-    },
-    {
-      "basename": "논문 리뷰",
-      "path": "김기수/산협 프로젝트 2/논문 리뷰/논문 리뷰.md"
-    },
-    {
-      "basename": "11.1 미팅",
-      "path": "김기수/산협 프로젝트 2/미팅 노트/11.1 미팅.md"
-    },
-    {
-      "basename": "미팅 노트",
-      "path": "김기수/산협 프로젝트 2/미팅 노트/미팅 노트.md"
-    },
-    {
-      "basename": "__napi_build_skb()",
-      "path": "Encyclopedia of NetworkSystem/Function/net-core/__napi_build_skb().md"
-    },
-    {
-      "basename": "napi_build_skb()",
-      "path": "Encyclopedia of NetworkSystem/Function/net-core/napi_build_skb().md"
-    },
-    {
-      "basename": "ice_build_skb()",
-      "path": "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_build_skb().md"
-    },
-    {
-      "basename": "__skb_put()",
-      "path": "Encyclopedia of NetworkSystem/Function/include-linux/__skb_put().md"
-    },
-    {
-      "basename": "ice_clean_rx_irq()",
-      "path": "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_clean_rx_irq().md"
-    },
-    {
-      "basename": "ice_get_rx_buf()",
-      "path": "Encyclopedia of NetworkSystem/Function/drivers-net-ethernet-intel-ice/ice_get_rx_buf().md"
     }
   ],
   "omittedPaths": []

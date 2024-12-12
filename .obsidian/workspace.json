@@ -8,42 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0700b88ebd425eff",
+            "id": "2def41e7e1d67c5e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_v4_rcv().md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8fcd237a4b5097fa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "김기수/산협 프로젝트 2/논문 리뷰/NetChannel 코드리뷰.md",
+                "file": "김기수/산협 프로젝트 2/논문 리뷰/넷채널.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "넷채널"
             }
           },
           {
-            "id": "ea028361dfb5ea8d",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "김기수/산협 프로젝트 2/논문 리뷰/NetChannel struct.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "faf0a33d05d02d16",
+            "id": "c3294a36e13bc8c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -51,11 +30,36 @@
                 "file": "김기수/산협 프로젝트 2/세미나 노트/11.8 세미나.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "11.8 세미나"
+            }
+          },
+          {
+            "id": "38ae74f626844ffd",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "김기수/산협 프로젝트 2/논문 리뷰/NetChannel struct.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "NetChannel struct.excalidraw"
+            }
+          },
+          {
+            "id": "d7cfe4d8d7fc2670",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/함수 콜 스택update.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "함수 콜 스택update"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -75,7 +79,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
             }
           },
           {
@@ -90,7 +96,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "검색"
             }
           },
           {
@@ -98,7 +106,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
@@ -106,14 +116,16 @@
             "type": "leaf",
             "state": {
               "type": "recent-files",
-              "state": {}
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 347.5,
+    "width": 282.5,
     "collapsed": true
   },
   "right": {
@@ -130,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "김기수/산협 프로젝트 2/논문 리뷰/NetChannel 코드리뷰.md",
+                "file": "김기수/산협 프로젝트 2/논문 리뷰/넷채널.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +150,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "넷채널의 백링크"
             }
           },
           {
@@ -147,10 +161,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "김기수/산협 프로젝트 2/논문 리뷰/NetChannel 코드리뷰.md",
+                "file": "김기수/산협 프로젝트 2/논문 리뷰/넷채널.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "넷채널의 나가는 링크"
             }
           },
           {
@@ -161,7 +177,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -170,20 +188,14 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "김기수/산협 프로젝트 2/논문 리뷰/NetChannel 코드리뷰.md"
-              }
-            }
-          },
-          {
-            "id": "69100a17d38781ba",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {}
+                "file": "김기수/산협 프로젝트 2/논문 리뷰/넷채널.md"
+              },
+              "icon": "lucide-list",
+              "title": "넷채널 개요"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -204,114 +216,48 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "floating": {
-    "id": "ebc1ed9ebf6038d4",
-    "type": "floating",
-    "children": [
-      {
-        "id": "d1baf167ea1f89cd",
-        "type": "window",
-        "children": [
-          {
-            "id": "aa77708ac5b179cc",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "f86dddeaca20d0dd",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Encyclopedia of NetworkSystem/Function/net-core/__release_sock().md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "4e68ec536e95d3f7",
-                "type": "leaf",
-                "state": {
-                  "type": "excalidraw",
-                  "state": {
-                    "file": "Excalidraw/주요 개념 구조도update.md"
-                  }
-                }
-              },
-              {
-                "id": "676cd1a2a936af7c",
-                "type": "leaf",
-                "state": {
-                  "type": "excalidraw",
-                  "state": {
-                    "file": "Excalidraw/함수 콜 스택update.md"
-                  }
-                }
-              },
-              {
-                "id": "c197be27d303d23a",
-                "type": "leaf",
-                "state": {
-                  "type": "excalidraw",
-                  "state": {
-                    "file": "Excalidraw/RPS-IPI 관계도.md"
-                  }
-                }
-              },
-              {
-                "id": "a434cb88f8a5e255",
-                "type": "leaf",
-                "state": {
-                  "type": "empty",
-                  "state": {}
-                }
-              }
-            ],
-            "currentTab": 3
-          }
-        ],
-        "direction": "vertical",
-        "x": 726,
-        "y": 43,
-        "width": 1194,
-        "height": 1200,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "8fcd237a4b5097fa",
+  "active": "2def41e7e1d67c5e",
   "lastOpenFiles": [
-    "무제 파일.md",
-    "김기수/산협 프로젝트 2/논문 리뷰/NetChannel struct.excalidraw.md",
-    "김기수/산협 프로젝트 2/세미나 노트/11.8 세미나.md",
-    "Untitled.md",
-    "김기수/산협 프로젝트 2/백서 제작용/pfmemalloc이란.md",
-    "Excalidraw/RPS-IPI 관계도.md",
-    "김기수/산협 프로젝트 2/백서 제작용/raw_local_deliver().md",
-    "김기수/산협 프로젝트 2/백서 제작용/recv() syscall.md",
-    "김기수/산협 프로젝트 2/백서 제작용/hooks_ipv4란.md",
-    "김기수/산협 프로젝트 2/백서 제작용/get_rps_cpu() 함수에 대한 로직 분석과 고찰 및 의의.md",
-    "김기수/산협 프로젝트 2/백서 제작용/BPF Flow Dissector에 대하여.md",
-    "김기수/산협 프로젝트 2/백서 제작용/`__inet_lookup_skb().md",
-    "김기수/산협 프로젝트 2/백서 제작용/`__netif_receive_skb_core() 함수에 대한 로직 분석과 고찰 및 의의.md",
-    "김기수/산협 프로젝트 2/백서 제작용/`__netif_receive_skb_list_ptype().md",
-    "김기수/산협 프로젝트 2/백서 제작용/백서 제작용.md",
-    "김기수/산협 프로젝트 2/백서 제작용/about Wait queue....md",
-    "김기수/산협 프로젝트 2/백서 제작용/Untitled.md",
-    "김기수/산협 프로젝트 2/백서 제작용/tcp_child_process().md",
-    "김기수/산협 프로젝트 2/백서 제작용/sock_rps_save_rxhash().md",
-    "testagain.txt.md",
-    "tcp_send_ack().md",
-    "sock_recvmsg.md",
-    "sock_def_readable().md",
-    "README.md",
-    "Pasted image 20241101101625.png",
-    "Pasted Image 20241015154739_315.png",
-    "Pasted image 20240920053724.png",
+    "김기수/산협 프로젝트 2/논문 리뷰/논문 리뷰.md",
     "김기수/산협 프로젝트 2/논문 리뷰/NetChannel 코드리뷰.md",
+    "김기수/산협 프로젝트 2/논문 리뷰/넷채널.md",
+    "김기수/산협 프로젝트 2/논문 리뷰/NetChannel struct.excalidraw.md",
+    "Excalidraw/RPS-IPI 관계도.md",
+    "김기수/산협 프로젝트 2/세미나 노트/11.8 세미나.md",
+    "김기수/산협 프로젝트 2/세미나 노트/11.22 제안서 미팅.md",
+    "김기수/산협 프로젝트 2/미팅 노트/11.1 미팅.md",
+    "김기수/산협 프로젝트 2/미팅 노트/10.18 미팅.md",
     "Excalidraw/함수 콜 스택update.md",
+    "Excalidraw/함수 콜 스택 chan.md",
+    "김기수/산협 프로젝트 2/논문 리뷰/Understanding Host Network Stack Overheads/Understanding Host Network Stack Overheads.md",
+    "Excalidraw/주요 개념 구조도update.md",
+    "김기수/산협 프로젝트 2/미팅 노트/9.27 미팅.md",
+    "김기수/산협 프로젝트 2/미팅 노트/9.20 미팅.md",
+    "김기수/산협 프로젝트 2/미팅 노트/9.11 미팅.md",
+    "Encyclopedia of NetworkSystem/Function/net-ipv4/tcp_v4_rcv().md",
+    "김기수/산협 프로젝트 2/미팅 노트/8.6 미팅.md",
+    "김기수/산협 프로젝트 2/미팅 노트/8.13 미팅.md",
+    "김기수/산협 프로젝트 2/미팅 노트/8.27 미팅.md",
+    "김기수/산협 프로젝트 2/미팅 노트/7.30 미팅.md",
+    "김기수/산협 프로젝트 2/미팅 노트/7.26 미팅.md",
+    "김기수/산협 프로젝트 2/미팅 노트/7.19 미팅/7.19 미팅.md",
+    "김기수/산협 프로젝트 2/미팅 노트/7.12 미팅/7.12 미팅.md",
+    "김기수/산협 프로젝트 2/미팅 노트/7.5 미팅/7.5 미팅.md",
+    "김기수/산협 프로젝트 2/미팅 노트/6.28 미팅.md",
+    "Pasted image 20241118154717.png",
+    "Pasted image 20241118154105.png",
+    "Pasted image 20241115155440.png",
+    "Pasted image 20241115150440.png",
+    "Pasted image 20241113184015.png",
+    "Pasted image 20241113183209.png",
+    "Pasted image 20241113182752.png",
+    "Pasted image 20241113181648.png",
+    "Pasted image 20241113170745.png",
+    "Pasted image 20241113170734.png",
     "lockdep.pdf",
-    "Excalidraw/함수 콜 스택.png"
+    "황재훈/Research Intern/tcp_test/jae",
+    "황재훈/Research Intern/tcp_test",
+    "박찬서/미팅 노트",
+    "박성빈"
   ]
 }

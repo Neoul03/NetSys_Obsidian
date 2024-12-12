@@ -131,3 +131,208 @@ struct nd_conn_queue {
 
 `msg`에 담겨있는 페이로드를 `bio_vec`로 옮겨서 `nd_dcopy_request`에 담아서 이를 큐잉하게 된다.
 이때 `nd_dcopy_iov_init()`함수 내부를 살펴보면 페이지 단위로 포인터를 전달하는 것을 볼 수 있다.
+
+맨처음 잡히는 `nd_v4_do_rcv`의 경우 `nd_hdr`를 통해 헤더를 가져오게 되는데, 이 헤더는 기존의 transport 헤더부분을 가져오는 것으로, virtual socket이 완전히 대체하고 있음을 알 수 있다.
+
+```c
+int nd_conn_alloc_queue(struct nd_conn_ctrl *ctrl,
+        int qid)
+{
+    // struct nvme_tcp_ctrl *ctrl = to_tcp_ctrl(nctrl);
+    struct nd_conn_queue *queue = &ctrl->queues[qid];
+    struct linger sol = { .l_onoff = 1, .l_linger = 0 };
+    int ret, opt, n;
+    // int bufsize = 1000000;
+    // int optlen = sizeof(bufsize);
+    queue->ctrl = ctrl;
+    init_llist_head(&queue->req_list);
+    INIT_LIST_HEAD(&queue->send_list);
+    /* init socket wait list */
+    INIT_LIST_HEAD(&queue->sock_wait_list);
+    spin_lock_init(&queue->sock_wait_lock);
+  
+    // spin_lock_init(&queue->lock);
+    mutex_init(&queue->send_mutex);
+    INIT_WORK(&queue->io_work, nd_conn_io_work);
+    queue->queue_size = ctrl->opts->queue_size;
+    queue->compact_low_thre = ctrl->opts->compact_low_thre;
+    queue->compact_high_thre = ctrl->opts->compact_high_thre;
+    atomic_set(&queue->cur_queue_size, 0);
+  
+  
+    if (qid >= ctrl->queue_count / 2) {
+        /* latency-sensitive channel */
+        queue->prio_class = 1;
+    } else
+        /* throughput-bound channel */
+        queue->prio_class = 0;
+    // if (qid > 0)
+    //  queue->cmnd_capsule_len = nctrl->ioccsz * 16;
+    // else
+    //  queue->cmnd_capsule_len = sizeof(struct nvme_command) +
+    //                  NVME_TCP_ADMIN_CCSZ;
+  
+    ret = sock_create(ctrl->addr.ss_family, SOCK_STREAM,
+            IPPROTO_TCP, &queue->sock);
+    if (ret) {
+        pr_err("failed to create socket: %d\n", ret);
+        return ret;
+    }
+  
+    /* Single syn retry */
+    opt = 1;
+    ret = kernel_setsockopt(queue->sock, IPPROTO_TCP, TCP_SYNCNT,
+            (char *)&opt, sizeof(opt));
+    if (ret) {
+        pr_err("failed to set TCP_SYNCNT sock opt %d\n", ret);
+        goto err_sock;
+    }
+    // tcp_sock_set_syncnt(queue->sock->sk, 1);
+    /* Set TCP no delay */
+    opt = 1;
+    ret = kernel_setsockopt(queue->sock, IPPROTO_TCP,
+            TCP_NODELAY, (char *)&opt, sizeof(opt));
+    if (ret) {
+        pr_err("failed to set TCP_NODELAY sock opt %d\n", ret);
+        goto err_sock;
+    }
+    // tcp_sock_set_nodelay(queue->sock->sk);
+    /*
+     * Cleanup whatever is sitting in the TCP transmit queue on socket
+     * close. This is done to prevent stale data from being sent should
+     * the network connection be restored before TCP times out.
+     */
+    ret = kernel_setsockopt(queue->sock, SOL_SOCKET, SO_LINGER,
+            (char *)&sol, sizeof(sol));
+    if (ret) {
+        pr_err("failed to set SO_LINGER sock opt %d\n", ret);
+        goto err_sock;
+    }
+    // sock_no_linger(queue->sock->sk);
+    /* Set socket type of service */
+    // if (ctrl->opts->tos >= 0) {
+    //  opt = ctrl->opts->tos;
+    //  ret = kernel_setsockopt(queue->sock, SOL_IP, IP_TOS,
+    //          (char *)&opt, sizeof(opt));
+    //  if (ret) {
+    //      pr_err("failed to set IP_TOS sock opt %d\n", ret);
+    //      goto err_sock;
+    //  }
+    // }
+    // if (so_priority > 0)
+    //  sock_set_priority(queue->sock->sk, so_priority);
+    // if (ctrl->opts->tos >= 0)
+    //  ip_sock_set_tos(queue->sock->sk, ctrl->opts->tos);
+    // io cpu might be need to be changed later
+    // ret = kernel_getsockopt(queue->sock, SOL_SOCKET, SO_SNDBUF,
+    //  (char *)&bufsize, &optlen);
+    // pr_info("ret value:%d\n", ret);
+    // pr_info("buffer size sender:%d\n", bufsize);
+    // bufsize = 4000000;
+    // ret = kernel_setsockopt(queue->sock, SOL_SOCKET, SO_SNDBUF,
+    //      (char *)&bufsize, sizeof(bufsize));
+    queue->sock->sk->sk_allocation = GFP_ATOMIC;
+    if (!qid)
+        n = 0;
+    else
+        n = (qid - 1) % num_online_cpus();
+    // queue->io_cpu = cpumask_next_wrap(n - 1, cpu_online_mask, -1, false);
+    queue->io_cpu = (nd_params.nr_nodes * qid) % nd_params.nr_cpus;
+    // queue->io_cpu = 0;
+    queue->qid = qid;
+    // printk("queue id:%d\n", queue->io_cpu);
+    queue->request = NULL;
+    // queue->data_remaining = 0;
+    // queue->ddgst_remaining = 0;
+    // queue->pdu_remaining = 0;
+    // queue->pdu_offset = 0;
+    sk_set_memalloc(queue->sock->sk);
+  
+    // if (nctrl->opts->mask & NVMF_OPT_HOST_TRADDR) {
+        ret = kernel_bind(queue->sock, (struct sockaddr *)&ctrl->src_addr,
+            sizeof(ctrl->src_addr));
+        if (ret) {
+            pr_err("failed to bind queue %d socket %d\n",qid, ret);
+            goto err_sock;
+        }
+    // }
+  
+    // queue->hdr_digest = nctrl->opts->hdr_digest;
+    // queue->data_digest = nctrl->opts->data_digest;
+    // if (queue->hdr_digest || queue->data_digest) {
+    //  ret = nvme_tcp_alloc_crypto(queue);
+    //  if (ret) {
+    //      dev_err(nctrl->device,
+    //          "failed to allocate queue %d crypto\n", qid);
+    //      goto err_sock;
+    //  }
+    // }
+  
+    // rcv_pdu_size = sizeof(struct nvme_tcp_rsp_pdu) +
+    //      nvme_tcp_hdgst_len(queue);
+    // queue->pdu = kmalloc(rcv_pdu_sze, GFP_KERNEL);
+    // if (!queue->pdu) {
+    //  ret = -ENOMEM;
+    //  goto err_crypto;
+    // }
+
+    // dev_dbg(nctrl->device, "connecting queue %d\n",
+    //      nvme_tcp_queue_id(queue));
+  
+    ret = kernel_connect(queue->sock, (struct sockaddr *)&ctrl->addr,
+        sizeof(ctrl->addr), 0);
+    if (ret) {
+        pr_err("failed to connect socket: %d\n", ret);
+        goto err_rcv_pdu;
+    }
+    // this part needed to be handled later
+    // ret = nvme_tcp_init_connection(queue);
+    if (ret)
+        goto err_init_connect;
+  
+    queue->rd_enabled = true;
+    set_bit(ND_CONN_Q_ALLOCATED, &queue->flags);
+    // nvme_tcp_init_recv_ctx(queue);
+  
+    write_lock_bh(&queue->sock->sk->sk_callback_lock);
+    queue->sock->sk->sk_user_data = queue;
+    queue->state_change = queue->sock->sk->sk_state_change;
+    queue->data_ready = queue->sock->sk->sk_data_ready;
+    queue->write_space = queue->sock->sk->sk_write_space;
+    queue->sock->sk->sk_data_ready = nd_conn_data_ready;
+    queue->sock->sk->sk_state_change = nd_conn_state_change;
+    queue->sock->sk->sk_write_space = nd_conn_write_space;
+#ifdef CONFIG_NET_RX_BUSY_POLL
+    queue->sock->sk->sk_ll_usec = 1;
+#endif
+    write_unlock_bh(&queue->sock->sk->sk_callback_lock);
+
+    return 0;
+  
+err_init_connect:
+    kernel_sock_shutdown(queue->sock, SHUT_RDWR);
+err_rcv_pdu:
+    // kfree(queue->pdu);
+// err_crypto:
+//  if (queue->hdr_digest || queue->data_digest)
+//      nvme_tcp_free_crypto(queue);
+err_sock:
+    sock_release(queue->sock);
+    queue->sock = NULL;
+    return ret;
+}
+```
+
+
+![[Pasted image 20241115150440.png]]
+뭔가 새로운 포트가 만들어지고 있었음.
+
+nd_sock.c 의 655 번 줄에서 Null Pointer exception이 일어나고 있었음
+
+내가 하고 있는 것. 
+1. module을 컴파일 하면서 -pg 옵션을 붙임. 이후 perf 등의 과정에서 함수 이름 심볼을 확인할 수 있을 것이라고 예상함.
+2. run_client.sh 40.0.0.3 1 nd 를 하면 자꾸 Killed됨. -> dmesg를 통해 찾아보니 Null Pointer Exception이 일어나고 있었고, `nd_v4_connect` 함수에서 nd_conn_queue_request 함수의 첫 번째 parameter가 `construct_sync_req`함수의 반환 값이지만 이 것이 `NULL`을 반환할 떄가 있어 이를 확인하는 함수를 `nd_conn_queue_request`함수 맨 앞에 삽입하여 모듈을 다시 컴파일 중.
+
+![[Pasted image 20241115155440.png]]
+
+
