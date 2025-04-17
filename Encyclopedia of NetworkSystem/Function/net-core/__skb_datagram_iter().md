@@ -10,7 +10,7 @@ static int __skb_datagram_iter(const struct sk_buff *skb, int offset,
 
 	/* Copy header. */
 	if (copy > 0) {
-		if (copy > len)
+		if (copy > len)kjjjjjjjjjjjjjjjjj
 			copy = len;
 		n = INDIRECT_CALL_1(cb, simple_copy_to_iter,
 				    skb->data + offset, copy, data, to);
